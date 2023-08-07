@@ -1,0 +1,62 @@
+[versions]
+hilt = "2.46.1"
+room = "2.5.2"
+coroutine = "1.3.9"
+paging = "3.1.1"
+paging_compose = "3.2.0-rc01"
+core = "1.10.1"
+lifecycle = "2.6.1"
+compose = "1.7.2"
+compose_bom = "2022.10.00"
+compose_navigation = "2.6.0"
+timber = "4.7.1"
+javax_inject = "1"
+lottie = "5.2.0"
+coil = "2.4.0"
+assertJ = "3.11.1"
+
+#Testing
+junit = "4.13.2"
+mockito_core = "4.9.0"
+mockito_kotlin = "2.2.0"
+
+[libraries]
+hilt_core = { module = "com.google.dagger:hilt-core", version.ref = "hilt" }
+hilt_android = { module = "com.google.dagger:hilt-android", version.ref = "hilt" }
+hilt_compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
+room_runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
+room_compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+coroutine_android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutine" }
+paging_runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
+paging_compose = { module = "androidx.paging:paging-compose", version.ref = "paging_compose" }
+core_ktx = { module = "androidx.core:core-ktx", version.ref = "core"}
+lifecycle_viewmodel_ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle"}
+lifecycle_viewmodel_compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle"}
+lifecycle_livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle"}
+lifecycle_runtime_ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle"}
+lifecycle_compiler = { module = "androidx.lifecycle:lifecycle-compiler", version.ref = "lifecycle"}
+activity_compose = { module = "androidx.activity:activity-compose", version.ref = "compose"}
+compose_bom = { module = "androidx.compose:compose-bom", version.ref = "compose_bom"}
+compose_ui = { module = "androidx.compose.ui:ui"}
+compose_graphics = { module = "androidx.compose.ui:ui-graphics"}
+compose_tool_preview = { module = "androidx.compose.ui:ui-tooling-previews"}
+compose_material3 = { module = "androidx.compose.material3:material3"}
+compose_navigation = { module = "androidx.navigation:navigation-compose", version.ref = "compose_navigation"}
+timber = { module = "com.jakewharton.timber:timber", version.ref = "timber"}
+javax_inject = { module = "javax.inject:javax.inject", version.ref = "javax_inject"}
+lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
+coil_compose = { module = "io.coil-kt:coil-compose", version.ref = "coil"}
+
+#Testing
+coroutine_test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutine" }
+assertJ_core = { module = "org.assertj:assertj-core", version.ref = "assertJ" }
+junit_test = { module = "junit:junit", version.ref = "junit" }
+mockito_core = { module = "org.mockito:mockito-core", version.ref = "mockito_core" }
+mockito_kotlin = { module = "com.nhaarman.mockitokotlin2:mockito-kotlin", version.ref = "mockito_kotlin" }
+mockito_inline = { module = "org.mockito:mockito-inline", version.ref = "mockito_core" }
+
+[plugins]
+android_library = { id = "com.android.library" }
+kotlin = { id = "kotlin-android" }
+dagger_hilt = { id = "dagger.hilt.android.plugin" }
+kapt = { id = "kotlin-kapt" }

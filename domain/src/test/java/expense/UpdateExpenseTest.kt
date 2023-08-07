@@ -1,0 +1,4 @@
+package expense
+
+class UpdateExpenseTest {
+}
