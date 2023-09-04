@@ -38,7 +38,11 @@ class ExpenseRepositoryImpl @Inject constructor(
         try {
             val data = expenseLocalDataSource.updateExpense(expense)
 
-            return Response.OnSuccess(data)
+            if (data >=0 ) {
+                return Response.OnSuccess(data)
+            }
+
+            return ExpenseNotFoundException().toErrorResult()
         } catch (e: Exception) {
             return e.toErrorResult()
         }

@@ -1,19 +1,20 @@
 [versions]
 hilt = "2.46.1"
 room = "2.5.2"
-coroutine = "1.3.9"
-paging = "3.1.1"
-paging_compose = "3.2.0-rc01"
+coroutine = "1.6.4"
+paging = "3.2.0"
+paging_compose = "3.2.0"
 core = "1.10.1"
 lifecycle = "2.6.1"
 compose = "1.7.2"
 compose_bom = "2022.10.00"
 compose_navigation = "2.6.0"
-timber = "4.7.1"
+timber = "5.0.1"
 javax_inject = "1"
 lottie = "5.2.0"
 coil = "2.4.0"
 assertJ = "3.11.1"
+androidx_test = "2.1.0"
 
 #Testing
 junit = "4.13.2"
@@ -26,6 +27,7 @@ hilt_android = { module = "com.google.dagger:hilt-android", version.ref = "hilt"
 hilt_compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "hilt" }
 room_runtime = { module = "androidx.room:room-runtime", version.ref = "room" }
 room_compiler = { module = "androidx.room:room-compiler", version.ref = "room" }
+room_ktx = { module = "androidx.room:room-ktx", version.ref = "room" }
 coroutine_android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutine" }
 paging_runtime = { module = "androidx.paging:paging-runtime", version.ref = "paging" }
 paging_compose = { module = "androidx.paging:paging-compose", version.ref = "paging_compose" }
@@ -48,6 +50,7 @@ lottie = { module = "com.airbnb.android:lottie", version.ref = "lottie" }
 coil_compose = { module = "io.coil-kt:coil-compose", version.ref = "coil"}
 
 #Testing
+andoirdx_test = { module = "androidx.arch.core:core-testing", version.ref = "androidx_test"}
 coroutine_test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutine" }
 assertJ_core = { module = "org.assertj:assertj-core", version.ref = "assertJ" }
 junit_test = { module = "junit:junit", version.ref = "junit" }

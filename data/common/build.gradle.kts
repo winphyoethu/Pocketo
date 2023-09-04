@@ -5,13 +5,13 @@ plugins {
 }
 
 java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-    targetCompatibility = JavaVersion.VERSION_1_8
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
 }
 
 kotlin {
     jvmToolchain {
-        languageVersion.set(JavaLanguageVersion.of(JavaVersion.VERSION_1_8.majorVersion))
+        languageVersion.set(JavaLanguageVersion.of(JavaVersion.VERSION_11.majorVersion))
     }
 }
 
@@ -20,4 +20,11 @@ dependencies {
     api(libs.coroutine.android)
     implementation(libs.hilt.core)
     kapt(libs.hilt.compiler)
+    testImplementation(libs.andoirdx.test)
+    testImplementation(libs.junit.test)
+    testImplementation(libs.assertJ.core)
+    testImplementation(libs.mockito.kotlin)
+    testImplementation(libs.mockito.core)
+    testImplementation(libs.mockito.inline)
+    testImplementation(libs.coroutine.test)
 }

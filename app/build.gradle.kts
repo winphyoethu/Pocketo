@@ -37,14 +37,14 @@ android {
 //        }
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.8"
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     kotlin {
         jvmToolchain {
@@ -78,6 +78,7 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.1.1")
     implementation("com.google.accompanist:accompanist-systemuicontroller:0.31.2-alpha")
     testImplementation("junit:junit:4.13.2")
+    testImplementation(libs.andoirdx.test)
     androidTestImplementation("androidx.test.ext:junit:1.1.3")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.4.0")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.4.3")
@@ -88,4 +89,6 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended:1.4.3")
     implementation("com.github.AmityCo.Amity-Social-Cloud-SDK-Android:amity-video-publisher:5.33.15-alpha02")
     implementation("com.github.AmityCo.Amity-Social-Cloud-SDK-Android:amity-video-player:5.33.15-alpha02")
+    implementation("com.github.AmityTrueID.Amity-Social-Cloud-UIKit-Android:amity-uikit:3.27.0.1-rc2")
+
 }
