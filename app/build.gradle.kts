@@ -43,12 +43,9 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.8"
     }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
     kotlin {
         jvmToolchain {
-            languageVersion.set(JavaLanguageVersion.of(JavaVersion.VERSION_1_8.majorVersion))
+            languageVersion.set(JavaLanguageVersion.of(JavaVersion.VERSION_11.majorVersion))
         }
     }
     buildFeatures {
@@ -87,8 +84,5 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
     implementation("androidx.constraintlayout:constraintlayout-compose:1.0.1")
     implementation("androidx.compose.material:material-icons-extended:1.4.3")
-    implementation("com.github.AmityCo.Amity-Social-Cloud-SDK-Android:amity-video-publisher:5.33.15-alpha02")
-    implementation("com.github.AmityCo.Amity-Social-Cloud-SDK-Android:amity-video-player:5.33.15-alpha02")
-    implementation("com.github.AmityTrueID.Amity-Social-Cloud-UIKit-Android:amity-uikit:3.27.0.1-rc2")
 
 }
