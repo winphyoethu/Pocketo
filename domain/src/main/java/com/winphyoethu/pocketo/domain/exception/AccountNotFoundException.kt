@@ -1,4 +1,4 @@
 package com.winphyoethu.pocketo.domain.exception
 
-class AccountNotFoundException {
+class AccountNotFoundException : Exception() {
 }
