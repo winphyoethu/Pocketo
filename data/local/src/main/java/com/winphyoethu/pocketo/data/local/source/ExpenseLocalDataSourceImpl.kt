@@ -9,7 +9,7 @@ import javax.inject.Inject
 class ExpenseLocalDataSourceImpl @Inject constructor(val expenseDao: ExpenseDao) :
     ExpenseLocalDataSource {
 
-    override suspend fun saveExpense(expense: Expense): Int {
+    override suspend fun saveExpense(expense: Expense): Long {
         return expenseDao.putExpense(
             ExpenseEntity(
                 userId = expense.userId,

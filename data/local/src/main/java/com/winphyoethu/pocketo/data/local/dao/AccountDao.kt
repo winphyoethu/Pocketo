@@ -11,12 +11,12 @@ import com.winphyoethu.pocketo.data.local.entity.AccountEntity
 interface AccountDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun putAccount(account: AccountEntity)
+    suspend fun putAccount(account: AccountEntity) : Long
 
     @Update
-    suspend fun updateAccount(account: AccountEntity)
+    suspend fun updateAccount(account: AccountEntity) : Long
 
     @Delete
-    suspend fun deleteAccount(account: AccountEntity)
+    suspend fun deleteAccount(account: AccountEntity) : Long
 
 }

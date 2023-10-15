@@ -8,7 +8,7 @@ import com.winphyoethu.pocketo.domain.category.model.Category
 @Entity(tableName = "category")
 data class CategoryEntity(
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
+    val id: Int = 0,
     @ColumnInfo(name = "category_name")
     val categoryName: String,
     @ColumnInfo(name = "created_at")

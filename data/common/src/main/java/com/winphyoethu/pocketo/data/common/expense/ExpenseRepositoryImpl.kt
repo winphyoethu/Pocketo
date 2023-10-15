@@ -15,7 +15,7 @@ class ExpenseRepositoryImpl @Inject constructor(
         try {
             val data = expenseLocalDataSource.saveExpense(expense)
 
-            return Response.OnSuccess(data)
+            return Response.OnSuccess(data.toInt())
         } catch (e: Exception) {
             return e.toErrorResult()
         }
@@ -38,7 +38,7 @@ class ExpenseRepositoryImpl @Inject constructor(
         try {
             val data = expenseLocalDataSource.updateExpense(expense)
 
-            if (data >=0 ) {
+            if (data >= 0) {
                 return Response.OnSuccess(data)
             }
 

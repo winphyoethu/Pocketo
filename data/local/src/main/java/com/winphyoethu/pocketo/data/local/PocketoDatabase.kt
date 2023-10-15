@@ -9,9 +9,10 @@ import com.winphyoethu.pocketo.data.local.dao.MonthlyUsageDao
 import com.winphyoethu.pocketo.data.local.entity.AccountEntity
 import com.winphyoethu.pocketo.data.local.entity.CategoryEntity
 import com.winphyoethu.pocketo.data.local.entity.ExpenseEntity
+import com.winphyoethu.pocketo.data.local.entity.MonthlyUsageEntity
 
 @Database(
-    entities = [AccountEntity::class, CategoryEntity::class, ExpenseEntity::class],
+    entities = [AccountEntity::class, CategoryEntity::class, ExpenseEntity::class, MonthlyUsageEntity::class],
     version = 1,
     exportSchema = true
 )
